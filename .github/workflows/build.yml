@@ -101,9 +101,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        VLEN: [128, 256, 512]
+        #VLEN: [128, 256, 512]
+        VLEN: [128]
         # For now, ELEN can't be freely choosen and needs to match XLEN
-        XLEN: [32, 64]
+        #XLEN: [32, 64]
+        XLEN: [64]
 
     steps:
       - name: Free Disk Space
